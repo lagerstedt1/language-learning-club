@@ -16,7 +16,7 @@ font-size: 30px;
 .box {
   padding: 20px;
   border: solid;
-  border-width: 0.5px;
+  border-width: 0.1px;
   display: flex;
   flex-direction: column;
 }
@@ -29,7 +29,11 @@ color: rgb(190, 190, 190);
 }
 
 .number-div {
-  padding-bottom: 100px;
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
 }
 
 nav {
@@ -37,4 +41,10 @@ nav {
 }
 .icon {
   height: 30px;
+}
+.footer {
+  font-size: 14px;
+  padding: 10px;
+  width: 80%;
+  color: rgb(190, 190, 190);
 }
