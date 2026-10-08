@@ -16,11 +16,16 @@
 <body>
 
   <!-- Nav -->
-   <div class="container">
-  <nav>Digitalents</nav>
+  <nav class="nav">Digitalents
+        <button class="nav-icon" onclick="
+          openMenu();
+          "><img class="nav-icon" src="assets/images/icon-menu.svg"></button>
+  </nav>
 
   <!-- Hero -->
-  <div class="box">
+      <div class="container">
+
+  <div class="box hero-box">
     <div class="main-title">
     Language Learning Club</div>
     <p></p>
@@ -31,7 +36,7 @@
     </div>
 
   <!-- Stats -->
-  <div class="box">
+  <div class="box stat-box">
   <div class="number-div">
     <img class="icon" src="assets/images/icon-sparkle.svg">
     2.4M</div>
@@ -41,7 +46,7 @@
   </div>
   </div>
 
-  <div class="box">
+  <div class="box stat-box">
   <div class="number-div">
         <img class="icon" src="assets/images/icon-plus.svg">
     1,284</div>
@@ -51,7 +56,7 @@
   </div>
   </div>
 
-  <div class="box">
+  <div class="box stat-box">
   <div class="number-div">
         <img class="icon" src="assets/images/icon-arrow-right.svg">
     38K</div>
@@ -61,7 +66,7 @@
   </div>
   </div>
 
-  <div class="box">
+  <div class="box stat-box">
   <div class="number-div">
         <img class="icon" src="assets/images/icon-trending-up.svg">
     3.1×</div>
@@ -70,19 +75,28 @@
   <div class="low-description">Partner schools outperform national averages 3x.</div>
   </div>
   </div>
-
+</div>
   <!-- Footer -->
-  <footer class="footer">2026 By Daniel Lagerstedt for Digitalents Academy, Nuorten Työpaja
+  <footer class="footer">2026 by Daniel Lagerstedt for Digitalents Academy, Nuorten Työpaja
   </footer>
 
   <!-- Menu panel — hidden until the hamburger is activated -->
-<!--
- About
-  Our Work
-  Partners
-  Annual Report
-  Donate  
--->
-</div>
+  <div class="hamburger-menu">
+  <div>About</div>
+  <div>Our Work</div>
+  <div>Partners</div>
+  </div>  
+
+  <script>
+    function openMenu() {
+
+    }
+  </script>
 </body>
 </html>
+
+<!-- 
+fix/create the sidebar, hide it,
+positions absolute or fixed i dont remember
+make it interactable
+-->
