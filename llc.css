@@ -7,13 +7,6 @@ body {
   padding: 0;
 }
 
-.hamburger-menu {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  gap: 20px;
-}
 .nav {
   display: flex;
   justify-content: space-between;
@@ -30,6 +23,7 @@ cursor: pointer;
 }
 .main-title {
 font-size: 30px;
+font-weight: 500;
 }
 
 .box {
@@ -38,6 +32,11 @@ font-size: 30px;
   border-width: 0.1px;
   display: flex;
   flex-direction: column;
+  transition: background-color 0.25s;
+}
+.box:hover {
+  cursor: pointer;
+  background-color: hsl(228, 94%, 64%);
 }
 .description {
   font-size: 14px;
@@ -73,13 +72,46 @@ color: rgb(190, 190, 190);
   font-size: 17px;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 .container {
 display: grid;
 grid-template-columns: repeat(3, 1fr);
+margin-top: 100px;
+transition: background-color 0.3s ease;
+}
+
+.container.active, footer.active {
+  background-color:hsl(228, 91%, 48%);
 }
 .main-title {
 font-size: 30px;
+}
+
+.hamburger-menu {
+  display: none;
+}
+.hamburger-menu.active {
+  position: fixed;
+  right: 0;
+  top: 15.4%;
+  bottom: 0;
+  width: 30.3%;
+  background-color: hsl(228, 99%, 58%);
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: end;
+  padding: 20px;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.hamburger-text:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .hero-box {
@@ -113,6 +145,14 @@ color: rgb(190, 190, 190);
 
 nav {
   padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: hsl(228, 99%, 58%);
 }
 .icon {
   height: 30px;

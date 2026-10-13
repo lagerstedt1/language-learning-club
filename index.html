@@ -17,8 +17,8 @@
 
   <!-- Nav -->
   <nav class="nav">Digitalents
-        <button class="nav-icon" onclick="
-          openMenu();
+        <button class="nav-icon js-nav" onclick="
+          toggleMenu();
           "><img class="nav-icon" src="assets/images/icon-menu.svg"></button>
   </nav>
 
@@ -82,21 +82,49 @@
 
   <!-- Menu panel — hidden until the hamburger is activated -->
   <div class="hamburger-menu">
-  <div>About</div>
-  <div>Our Work</div>
-  <div>Partners</div>
+  <div class="hamburger-text">About</div>
+  <div class="hamburger-text">Our Work</div>
+  <div class="hamburger-text">Partners</div>
   </div>  
 
   <script>
-    function openMenu() {
-
+    function toggleMenu() {
+      const menu = document.querySelector('.hamburger-menu');
+      menu.classList.toggle('active');
+      const container = document.querySelector('.container');
+      container.classList.toggle('active');
+      const footer = document.querySelector('.footer');
+      footer.classList.toggle('active');
     }
   </script>
 </body>
 </html>
 
+
+
 <!-- 
-fix/create the sidebar, hide it,
-positions absolute or fixed i dont remember
-make it interactable
+About
+Start Speaking like a native
+A landing page for the Language Learning Club, a platform & community built for active learning & linguistic study.
+Landing page made by Daniel Lagerstedt at & for Digitalents Academy.
+
+Many people struggle with speaking in a new language. Theory can be complicated.
+A new theory and way of language learning
+Active learning through conversation
+An hour of learning
+Speak & learn with other people
+Language immersion
+
+Learning pronunciation
+
+Focus on pronunciation
+
+Through committed learning you can learn fluent pronunciation over time
+
+Check what Nikita has built
+
+Thanks to Krishna Regmi, Harry Salmio & Nikita
+Github page: https://github.com/lagerstedt1
+Send feedback on the landing page to daniel.lagerstedt1@gmail.com
+
 -->
