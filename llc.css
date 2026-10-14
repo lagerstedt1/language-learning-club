@@ -64,6 +64,33 @@ color: rgb(190, 190, 190);
   color: rgb(190, 190, 190);
 }
 
+@media (max-width: 768px) {
+  
+.hamburger-menu {
+  display: none;
+}
+.hamburger-menu.active {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  background-color: hsl(228, 99%, 58%);
+  z-index: 101;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 40px;
+  font-weight: 400;
+  font-size: 30px;
+}
+.container.active, footer.active {
+  background-color:hsl(228, 91%, 48%);
+  opacity: 0.7;
+}
+}
+
 @media (min-width: 768px) {
   body {
   background-color: hsl(228, 99%, 58%);
@@ -94,7 +121,7 @@ font-size: 40px;
   display: none;
 }
 .hamburger-menu.active {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 101px;
   bottom: 0;
