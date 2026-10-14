@@ -11,6 +11,8 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 30px;
+  border-bottom: solid;
+  border-width: 0.1px;
 }
 .nav-icon {
 background-color: hsl(228, 99%, 58%);
@@ -76,13 +78,13 @@ color: rgb(190, 190, 190);
   left: 0;
   box-sizing: border-box;
   background-color: hsl(228, 99%, 58%);
-  z-index: 101;
+  z-index: 100;
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  padding-top: 90px;
-  padding-bottom: 60px;
+  padding-top: 100px;
+  padding-bottom: 50px;
   font-weight: 400;
   font-size: 30px;
 }
@@ -121,7 +123,7 @@ nav {
 .container {
 display: grid;
 grid-template-columns: repeat(3, 1fr);
-margin-top: 100px;
+margin-top: 90px;
 transition: background-color 0.3s ease;
 }
 
@@ -139,7 +141,7 @@ font-size: 40px;
 .hamburger-menu.active {
   position: fixed;
   right: 0;
-  top: 101px;
+  top: 93px;
   bottom: 0;
   width: 33.3%;
   box-sizing: border-box;
@@ -208,7 +210,7 @@ nav {
 }
 .footer {
   font-size: 14px;
-  padding: 10px;
+  padding: 14px;
   width: 70%;
   color: rgb(190, 190, 190);
 }
